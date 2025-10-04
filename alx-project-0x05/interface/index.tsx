@@ -14,9 +14,3 @@ export interface LayoutProps {
 export interface PageRouteProps {
   pageRoute: string;
 }
-
-export interface CountContextProps {
-  count: number
-  increment: () => void
-  decrement: () => void
-}
