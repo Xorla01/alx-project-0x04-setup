@@ -64,26 +64,50 @@ By completing these projects, you will:
 ---
 
 ## Project Structure
+<details>
+  <summary>Common Files</summary>
 
-### Common Files
-pages/ # Contains page components
-└── counter-app.tsx # Main counter application
-components/ # Reusable UI components
-layouts/ # Application layout components
-└── Header.tsx # Shared header component
+- **Pages**  
+  Contains all the page components that Next.js uses for routing.  
+  - **Counter App Page** – The main counter application where the counter logic and UI live.
 
+- **Components**  
+  Contains all reusable UI components shared across the app.
 
-### Variant-Specific Files
-#### useState Version (0x04)
-- Simple state management within a single component
+- **Layouts**  
+  Manages the overall structure of pages and shared sections.  
+  - **Header** – A global navigation header displayed at the top of the app.
 
-#### Context API Version (0x05)
-- `context/CountContext.tsx`: Context provider and hooks  
-- Modified `_app.tsx` to wrap application with provider  
+</details>
 
-#### Redux Version (0x06)
-- `store/store.ts`: Redux store configuration  
-- Updated components to use Redux hooks  
+---
+
+<details>
+  <summary>useState Version (0x04)</summary>
+
+- Implements simple state management within a single component using React’s **useState** hook.
+
+</details>
+
+---
+
+<details>
+  <summary>Context API Version (0x05)</summary>
+
+- **CountContext** – Provides global state using React’s Context API and custom hooks.  
+- **App Wrapper** – Modified `_app.tsx` to wrap the app with the Context Provider for shared state.
+
+</details>
+
+---
+
+<details>
+  <summary>Redux Version (0x06)</summary>
+
+- **Store** – Configured with Redux Toolkit to manage global state.  
+- Components updated to use **Redux hooks** (`useSelector`, `useDispatch`) to connect UI to the store.
+
+</details> 
 
 ---
 
